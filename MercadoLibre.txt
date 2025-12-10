@@ -1,0 +1,191 @@
+Incident Identifier: 451215AA-619B-42FC-85D7-7BF7FF0F1208
+CrashReporter Key:   d924283e4fd339e011e62c035304c365e6a2970b
+Hardware Model:      iPhone14,7
+Process:             MercadoLibre [2656]
+Path:                /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/MercadoLibre
+Identifier:          com.3mosquitos.MercadoLibre
+Version:             10.475.0 (10.475.0)
+AppStoreTools:       17A323
+AppVariant:          1:iPhone14,7:16
+Code Type:           ARM-64 (Native)
+Role:                Foreground
+Parent Process:      launchd [1]
+Coalition:           com.3mosquitos.MercadoLibre [1492]
+
+Date/Time:           2025-12-07 09:55:00.3992 -0500
+Launch Time:         2025-12-07 09:54:59.6498 -0500
+OS Version:          iPhone OS 16.6.1 (20G81)
+Release Type:        User
+Baseband Version:    1.80.02
+Report Version:      104
+
+Exception Type:  EXC_BAD_ACCESS (SIGSEGV)
+Exception Subtype: KERN_INVALID_ADDRESS at 0x0000000000000008
+Exception Codes: 0x0000000000000001, 0x0000000000000008
+VM Region Info: 0x8 is not in any region.  Bytes before following region: 68719476728
+      REGION TYPE                 START - END      [ VSIZE] PRT/MAX SHRMOD  REGION DETAIL
+      UNUSED SPACE AT START
+--->  
+      commpage (reserved)     1000000000-7000000000 [384.0G] ---/--- SM=NUL  ...(unallocated)
+Termination Reason: SIGNAL 11 Segmentation fault: 11
+Terminating Process: exc handler [2656]
+
+Triggered by Thread:  0
+
+Thread 0 name:   Dispatch queue: com.apple.main-thread
+Thread 0 Crashed:
+0   ???                           	               0x8 ???
+
+Thread 1:
+0   libsystem_pthread.dylib       	       0x2012b5b74 start_wqthread + 0
+
+Thread 2:
+0   libsystem_pthread.dylib       	       0x2012b5b74 start_wqthread + 0
+
+
+Thread 0 crashed with ARM Thread State (64-bit):
+    x0: 0x0000000000000000   x1: 0x000000010de5f4f0   x2: 0x0000000000000103   x3: 0xfffffffffffffff2
+    x4: 0x0000000000000000   x5: 0x0000000000000000   x6: 0x0000000000000002   x7: 0x0000000000000b20
+    x8: 0x000000010d9e2f08   x9: 0x0000000000000000  x10: 0x0000000000000008  x11: 0x0000000000000000
+   x12: 0x0000000000000000  x13: 0x000000021fe8c000  x14: 0x0000000000000019  x15: 0x0000000000000003
+   x16: 0x00000002012235e0  x17: 0x9abf0001f7e22600  x18: 0x0000000000000000  x19: 0x000000010d9e278c
+   x20: 0x000000016b9a2b18  x21: 0x000000010aefdc50  x22: 0x000000010de25378  x23: 0x000000010d840ab0
+   x24: 0x000000010d8403f0  x25: 0x000000010d840510  x26: 0x000000016b9a27c0  x27: 0x000000010d840ab0
+   x28: 0x0000000000001ac0   fp: 0x0000000000000028   lr: 0x0000000000000008
+    sp: 0x000000016b9a2560   pc: 0x0000000000000008 cpsr: 0x60001000
+   far: 0x0000000000000008  esr: 0x82000006 (Instruction Abort) Translation fault
+
+Binary Images:
+       0x104454000 -        0x10974ffff MercadoLibre arm64  <a4d95e7e71af3fe5935653a1f6945e09> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/MercadoLibre
+       0x10ae54000 -        0x10ae5bfff appstorehelper.dylib arm64e  <72965882cfdc3320ab4179d79efff4ef> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/appstorehelper.dylib
+       0x10af74000 -        0x10af8ffff AVFoundationCollector arm64  <54b88039c4a3335c8e968fee5b37e307> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/AVFoundationCollector.framework/AVFoundationCollector
+       0x10b02c000 -        0x10b08bfff AdjustSdk arm64  <af188c327d3a3f128aa71ddc8a659669> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/AdjustSdk.framework/AdjustSdk
+       0x10b140000 -        0x10b1bffff AdjustSigSdk arm64  <61b4710b3d4f3fd180fb4b2b14edc882> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/AdjustSigSdk.framework/AdjustSigSdk
+       0x10b828000 -        0x10bd43fff Andes arm64  <bedc79c82ace3dfeb1f894f38fccb6a2> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/Andes.framework/Andes
+       0x10bebc000 -        0x10c2d7fff AndesUI arm64  <fcadc53b57943522b80b08e9d443faec> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/AndesUI.framework/AndesUI
+       0x10afa8000 -        0x10afb7fff AppMonitoring arm64  <d639cd768aef395190ece1ce3aa8c478> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/AppMonitoring.framework/AppMonitoring
+       0x10af40000 -        0x10af47fff AppTheme arm64  <c9df9fcdac3c31039cae514daf5073bf> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/AppTheme.framework/AppTheme
+       0x10afec000 -        0x10affbfff AuthScopedSession arm64  <2fa3cab33c243a87a12a6f28f67549b2> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/AuthScopedSession.framework/AuthScopedSession
+       0x10af58000 -        0x10af5ffff Base64 arm64  <c6bf42edeb823290a68cadf9c91bccae> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/Base64.framework/Base64
+       0x10b0e8000 -        0x10b103fff BitmovinCollector arm64  <ca541781679d372692957f0941c476de> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/BitmovinCollector.framework/BitmovinCollector
+       0x10afcc000 -        0x10afd3fff BitmovinPlayer arm64  <c4b2c10cd965362898f5b68b06e8d240> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/BitmovinPlayer.framework/BitmovinPlayer
+       0x10b1d0000 -        0x10b1dffff BitmovinPlayerAnalytics arm64  <05751791f9b239daaea2969e3dd8afff> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/BitmovinPlayerAnalytics.framework/BitmovinPlayerAnalytics
+       0x10c488000 -        0x10c7d7fff BitmovinPlayerCore arm64  <6db2adc3f33f3893aa2239e85894506f> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/BitmovinPlayerCore.framework/BitmovinPlayerCore
+       0x10b25c000 -        0x10b2a3fff Bugsnag arm64  <c658ef455187381c88891b8adf994555> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/Bugsnag.framework/Bugsnag
+       0x10b00c000 -        0x10b013fff BugsnagNetworkRequestPlugin arm64  <14402d32c6733897b99b7f00c5b91fb5> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/BugsnagNetworkRequestPlugin.framework/BugsnagNetworkRequestPlugin
+       0x10b0b0000 -        0x10b0b7fff CHTCollectionViewWaterfallLayout arm64  <4b3f1d9ce3c33d58b00f16c73609a68b> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/CHTCollectionViewWaterfallLayout.framework/CHTCollectionViewWaterfallLayout
+       0x10b120000 -        0x10b12bfff CMPopTipView arm64  <05e976665a0e3dd4b00ee7073dc31ebf> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/CMPopTipView.framework/CMPopTipView
+       0x10b3b0000 -        0x10b453fff CoreCollector arm64  <f85a6d29c4ce3a37a5e648c402720e59> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/CoreCollector.framework/CoreCollector
+       0x10b2c8000 -        0x10b2fbfff CrabDI arm64  <537578d7aa193f0f8a61f955ba9daefe> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/CrabDI.framework/CrabDI
+       0x10b5fc000 -        0x10b6e7fff DGCharts arm64  <63534c830ed33a8bb042c8ad71d5f73b> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/DGCharts.framework/DGCharts
+       0x10b1f4000 -        0x10b1fffff DataCompression arm64  <bc9da099272032d9a5be9bda66877fe5> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/DataCompression.framework/DataCompression
+       0x10b314000 -        0x10b333fff DataPrivacyHelper arm64  <6fbedc2458b330459b64c24e241078de> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/DataPrivacyHelper.framework/DataPrivacyHelper
+       0x10b518000 -        0x10b56ffff DatadogCore arm64  <a21a370a7c2832bbba528e7da62ddf6e> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/DatadogCore.framework/DatadogCore
+       0x10c9d0000 -        0x10ca67fff DatadogInternal arm64  <9a3701f4621a3c22b188506a9ed15ce2> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/DatadogInternal.framework/DatadogInternal
+       0x10b49c000 -        0x10b4d3fff DatadogLogs arm64  <db01002c0bb336bfb6ccb33fab17c94a> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/DatadogLogs.framework/DatadogLogs
+       0x10ccb8000 -        0x10ce4bfff DatadogRUM arm64  <f10df1d33b62397eb29e307436a7538c> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/DatadogRUM.framework/DatadogRUM
+       0x10b350000 -        0x10b373fff DevicesSdk arm64  <d4b293eadbca334b93a8613f6e55b7c6> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/DevicesSdk.framework/DevicesSdk
+       0x10cef8000 -        0x10cfaffff ErrorHandler arm64  <88554bf192db394e84f69f1ad1ab3fdc> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/ErrorHandler.framework/ErrorHandler
+       0x10c8f8000 -        0x10c94ffff EverestCanvas arm64  <7b140abeab8f390da641f9303d0c60f8> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/EverestCanvas.framework/EverestCanvas
+       0x10b760000 -        0x10b79ffff FBAEMKit arm64  <22d394a176793da4a39504185458f4aa> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/FBAEMKit.framework/FBAEMKit
+       0x10b210000 -        0x10b21ffff FBLPromises arm64  <74353ea3a989345ea4d5a5fdd8de451f> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/FBLPromises.framework/FBLPromises
+       0x10d000000 -        0x10d137fff FBSDKCoreKit arm64  <9f28496682773a5fa96eec844fc20d57> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/FBSDKCoreKit.framework/FBSDKCoreKit
+       0x10b230000 -        0x10b23ffff FBSDKCoreKit_Basics arm64  <0785efe8ccf6323799654b5e3e1bfdda> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/FBSDKCoreKit_Basics.framework/FBSDKCoreKit_Basics
+       0x10b390000 -        0x10b39bfff FLAnimatedImage arm64  <a54445db841f361682654ec4419fb6aa> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/FLAnimatedImage.framework/FLAnimatedImage
+       0x10b4f0000 -        0x10b4fbfff FSQCollectionViewAlignedLayout arm64  <bba689a4ec5335f4a119e6afb70b54ef> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/FSQCollectionViewAlignedLayout.framework/FSQCollectionViewAlignedLayout
+       0x10b594000 -        0x10b59ffff FXBlurView arm64  <c2a7efc97612302f8afb6cd5c62f3533> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/FXBlurView.framework/FXBlurView
+       0x10d840000 -        0x10de23fff FaceTecSDK arm64  <b74420f5d1073e83990f77f12d776a2e> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/FaceTecSDK.framework/FaceTecSDK
+       0x10b7bc000 -        0x10b7d3fff FfSdk arm64  <9c9002b42f7534ab90047a0edc4e8441> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/FfSdk.framework/FfSdk
+       0x10b7e8000 -        0x10b7fbfff FirebaseCore arm64  <7630d05d9ebc34079d9b875b677b8666> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/FirebaseCore.framework/FirebaseCore
+       0x10c97c000 -        0x10c997fff FirebaseCoreInternal arm64  <d6fb88e6c7ac3f369ffe210f2befb20d> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/FirebaseCoreInternal.framework/FirebaseCoreInternal
+       0x10cab4000 -        0x10cacbfff FirebaseDynamicLinks arm64  <3eb3c1c2952f3ffbb896f22dba531ae4> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/FirebaseDynamicLinks.framework/FirebaseDynamicLinks
+       0x10cae0000 -        0x10caf7fff FirebaseInstallations arm64  <1d1f12949d263818b26de0aec2eeae1e> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/FirebaseInstallations.framework/FirebaseInstallations
+       0x10d1c8000 -        0x10d2b3fff GoogleInteractiveMediaAds arm64  <a4a73469253d3675aea9fc1d212bf7d5> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/GoogleInteractiveMediaAds.framework/GoogleInteractiveMediaAds
+       0x10cb0c000 -        0x10cb2bfff GoogleUtilities arm64  <1333b9b37f403ff0bc01114fbd1803fd> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/GoogleUtilities.framework/GoogleUtilities
+       0x10b0c8000 -        0x10b0cffff JRSwizzle arm64  <f386006f9b0a35f581a18f9b34b02968> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/JRSwizzle.framework/JRSwizzle
+       0x10cb40000 -        0x10cb53fff JWT arm64  <d861be13ff6e3b8ea45ce5bca8ddfe3e> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/JWT.framework/JWT
+       0x10d314000 -        0x10d3effff Kingfisher arm64  <40ca87a0339a36f9985c8660f7b8c922> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/Kingfisher.framework/Kingfisher
+       0x10b5d0000 -        0x10b5dbfff KingfisherWebP arm64  <58d2a9e55f3d39a68de1b2901b084042> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/KingfisherWebP.framework/KingfisherWebP
+       0x10cbb0000 -        0x10cbdffff LiveActivitiesUiCore arm64  <a50e6baf6da63d16a0d60b502615f128> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/LiveActivitiesUiCore.framework/LiveActivitiesUiCore
+       0x10cc4c000 -        0x10cc7bfff Lottie arm64  <13aa352d50f03bbba4e5cd2d6961fdc1> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/Lottie.framework/Lottie
+       0x10cb68000 -        0x10cb7bfff MGSwipeTableCell arm64  <c9eb545816103629aff855ab390585a5> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MGSwipeTableCell.framework/MGSwipeTableCell
+       0x10c9ac000 -        0x10c9b7fff MLAnalytics arm64  <4543f1e9fad53c4ba2d91315f0b2886f> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLAnalytics.framework/MLAnalytics
+       0x10d4b4000 -        0x10d503fff MLAuthentication arm64  <d4f50797fba53b1193fbff4cf49877ba> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLAuthentication.framework/MLAuthentication
+       0x10b5b0000 -        0x10b5b7fff MLBookmarks arm64  <49a99018e5ce3c8e98250e660b27d37f> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLBookmarks.framework/MLBookmarks
+       0x10cbfc000 -        0x10cc07fff MLCollaborators arm64  <e47a2d43f95d39a8866031d0d7d8f144> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLCollaborators.framework/MLCollaborators
+       0x10d534000 -        0x10d56ffff MLCommons arm64  <7d5f6ba0826231669e54d104d4fa4273> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLCommons.framework/MLCommons
+       0x10cc18000 -        0x10cc23fff MLDynamicModal arm64  <d74a36664e8d3f4190b1ffb2954b217c> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLDynamicModal.framework/MLDynamicModal
+       0x10b810000 -        0x10b817fff MLFirebase arm64  <d1d63f7b8a7b3bfaac9d30ce5a3828d0> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLFirebase.framework/MLFirebase
+       0x10cb8c000 -        0x10cb93fff MLGodzippa arm64  <c7ef738e668e3bd9bd8cc586f8f63d01> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLGodzippa.framework/MLGodzippa
+       0x10d45c000 -        0x10d46bfff MLIgnite arm64  <fba39fd0300e3d578b4cf3be865aee73> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLIgnite.framework/MLIgnite
+       0x10d5e4000 -        0x10d617fff MLLocalStorage arm64  <c272e5ec0b1d37e9a7eb7e23621c6f1d> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLLocalStorage.framework/MLLocalStorage
+       0x10d594000 -        0x10d5abfff MLLocation arm64  <63bb2a56d82230758cb5fcec7289813b> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLLocation.framework/MLLocation
+       0x10d6f8000 -        0x10d77ffff MLMelidata arm64  <e18f83af1f4f3c38915cafa503078295> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLMelidata.framework/MLMelidata
+       0x10d438000 -        0x10d443fff MLMetrics arm64  <5bb4de22fde03e3aada1030a82330482> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLMetrics.framework/MLMetrics
+       0x10d480000 -        0x10d48bfff MLNavigationBarTransition arm64  <3e5c35ff306137aab400749bc3b32b1c> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLNavigationBarTransition.framework/MLNavigationBarTransition
+       0x10d7bc000 -        0x10d80ffff MLNetworking arm64  <adeaa82500b83482a6accc374976fb94> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLNetworking.framework/MLNetworking
+       0x10d698000 -        0x10d6d7fff MLNotifications arm64  <523f17742efc32ab972f1fb3df4db2b2> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLNotifications.framework/MLNotifications
+       0x10d664000 -        0x10d67bfff MLOnDemandResources arm64  <851e6b4246573e1d9d8504e2854690f7> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLOnDemandResources.framework/MLOnDemandResources
+       0x10cc34000 -        0x10cc3bfff MLPlace arm64  <6795f4f5f6ee3a11baf0e6fcaca7bd7d> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLPlace.framework/MLPlace
+       0x10df44000 -        0x10df8ffff MLQADB arm64  <e9e25d55ca8f37f09f3d03d50853ba63> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLQADB.framework/MLQADB
+       0x10cc9c000 -        0x10cca3fff MLReachability arm64  <b7918c7c69873dc0a95cdaa98098cd02> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLReachability.framework/MLReachability
+       0x10d638000 -        0x10d643fff MLRemoteConfigurations arm64  <23a86e6b1cd33d99815a15b9b456dc4d> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLRemoteConfigurations.framework/MLRemoteConfigurations
+       0x10ded4000 -        0x10dedffff MLSecurity arm64  <830cdf3637d33f0b9bd1b2a32e1ec2d9> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLSecurity.framework/MLSecurity
+       0x10e014000 -        0x10e053fff MLUI arm64  <d93cf53c6cf7333fb3ff22c02c9c4845> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLUI.framework/MLUI
+       0x10e15c000 -        0x10e1fffff MLUIComponents arm64  <9dc6e48bc81d30dd9f79419b7085ffb1> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MLUIComponents.framework/MLUIComponents
+       0x10def4000 -        0x10defffff MPDynamicSkeleton arm64  <8ace829074e4315eb5115b8f3611712d> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MPDynamicSkeleton.framework/MPDynamicSkeleton
+       0x10d49c000 -        0x10d4a3fff MPTopFloatingView arm64  <a2215b1931943c4ab2dc36e4df0127ab> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MPTopFloatingView.framework/MPTopFloatingView
+       0x10e074000 -        0x10e0a7fff MeliDatadogTrace arm64  <f047e7426e543f90b3d9625d2f5e8628> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MeliDatadogTrace.framework/MeliDatadogTrace
+       0x10dfb4000 -        0x10dfc7fff MobileCryptography arm64  <702058084d8f3a5ab358e5d997a52975> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MobileCryptography.framework/MobileCryptography
+       0x10e248000 -        0x10e283fff MobilePermissions arm64  <32f7581e1850363389be937b2a94b768> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/MobilePermissions.framework/MobilePermissions
+       0x10d5c0000 -        0x10d5c7fff NavigationRouter arm64  <e4a0a98544103077ba2e6db4b809c25d> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/NavigationRouter.framework/NavigationRouter
+       0x10e100000 -        0x10e123fff OMSDK_Mercadolibre arm64  <12d0793a8c2b3098baa7179de1788a5e> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/OMSDK_Mercadolibre.framework/OMSDK_Mercadolibre
+       0x10e318000 -        0x10e363fff OpenTelemetryApi arm64  <33e2249fbaac396aa6789296c89ca519> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/OpenTelemetryApi.framework/OpenTelemetryApi
+       0x10e41c000 -        0x10e477fff OpenTelemetryProtocolExporterCommon arm64  <f28c5b34a38a317380b0d95704f480f1> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/OpenTelemetryProtocolExporterCommon.framework/OpenTelemetryProtocolExporterCommon
+       0x10dfdc000 -        0x10dfebfff OpenTelemetryProtocolExporterHttp arm64  <3e14ca35fbec3e4198ed8b7863ec7190> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/OpenTelemetryProtocolExporterHttp.framework/OpenTelemetryProtocolExporterHttp
+       0x10e594000 -        0x10e62bfff OpenTelemetrySdk arm64  <fcd1f0d3fd59314e95ac3184ada85fef> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/OpenTelemetrySdk.framework/OpenTelemetrySdk
+       0x10e0c4000 -        0x10e0d7fff PINCache arm64  <b1787441dc1634129370f278c8843609> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/PINCache.framework/PINCache
+       0x10e2a4000 -        0x10e2bffff PINRemoteImage arm64  <9b417d28c23f32058d4addfb9aa794da> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/PINRemoteImage.framework/PINRemoteImage
+       0x10df10000 -        0x10df17fff PerformanceTools arm64  <9227b34fa48235c8b41c748c835655c5> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/PerformanceTools.framework/PerformanceTools
+       0x10e394000 -        0x10e3a7fff PerformanceTraces arm64  <aa3b00ced14d32c485e51dec893d945c> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/PerformanceTraces.framework/PerformanceTraces
+       0x10e520000 -        0x10e56bfff Protobuf arm64  <ad15e23ca928350abc2c4cc609fd4e3e> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/Protobuf.framework/Protobuf
+       0x10e13c000 -        0x10e147fff PureLayout arm64  <727571ec61723835925c1d943191379a> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/PureLayout.framework/PureLayout
+       0x10e774000 -        0x10e81bfff Qualtrics arm64  <62f76cc8474835e9aa0971ff6e96d88f> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/Qualtrics.framework/Qualtrics
+       0x10e2d4000 -        0x10e2dffff ReauthNativeAdapter arm64  <de85495629ee3d8bad25bae18f016382> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/ReauthNativeAdapter.framework/ReauthNativeAdapter
+       0x10e3bc000 -        0x10e3cbfff StartUPInitializer arm64  <dd429d35f2e63078a72b84f8be731d0e> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/StartUPInitializer.framework/StartUPInitializer
+       0x10e9d0000 -        0x10eae3fff SwiftProtobuf arm64  <eb917d9a97743de49e75e46f809ea51e> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/SwiftProtobuf.framework/SwiftProtobuf
+       0x10f2d4000 -        0x10f9a7fff TwilioVoice arm64  <cccdd0c4abd5301cb76ad75ab4e673cf> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/TwilioVoice.framework/TwilioVoice
+       0x10ed1c000 -        0x10ee6ffff VersionChecker arm64  <5b395ad5d5e23aa5bd88a93be9c1310a> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/VersionChecker.framework/VersionChecker
+       0x10e684000 -        0x10e6dbfff libwebp arm64  <2e0929f00b0935658e6f54496cabcd28> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/libwebp.framework/libwebp
+       0x10df28000 -        0x10df2ffff nanopb arm64  <2c045dd14cdd359b9128ef54b1090023> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/nanopb.framework/nanopb
+       0x10fa78000 -        0x10fc8bfff uSDK arm64  <8d2b11e4d3a13a98ba3e0b7ae753b606> /private/var/containers/Bundle/Application/D7A53C47-B519-40AE-B624-1C87B4E2EF65/MercadoLibre.app/Frameworks/uSDK.framework/uSDK
+       0x10e4ec000 -        0x10e4fbfff    Choicy.dylib arm64e  <2b167b3740e93580b97469748004bbef> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/TweakInject/   Choicy.dylib
+       0x10e3e0000 -        0x10e3e7fff libroot.dylib arm64e  <e7decbb8acc23ae79adc7740692cf512> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/libroot.dylib
+       0x10e6f8000 -        0x10e703fff OldABI.dylib arm64e  <608616508276382c88147c4795d55cf1> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/ellekit/OldABI.dylib
+       0x10e720000 -        0x10e727fff 3DAppVersionSpoofer.dylib arm64e  <9cf0c74bc2d43715b4646a9774af8800> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/TweakInject/3DAppVersionSpoofer.dylib
+       0x10f200000 -        0x10f227fff libellekit.dylib arm64e  <ad0ac18b369e30c2acc90136cba9aa78> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/libellekit.dylib
+       0x10e974000 -        0x10e987fff Cephei arm64e  <15ff623f353b39e383ca012fa5ca9c97> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/Library/Frameworks/Cephei.framework/Cephei
+       0x10e73c000 -        0x10e743fff DynamicPenUIKit.dylib arm64e  <2439968d31273a619947219db0f84d8c> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/TweakInject/DynamicPenUIKit.dylib
+       0x10e758000 -        0x10e75ffff EmoZoom.dylib arm64e  <41167e040d4831ccbe7e44d80eb6e9b0> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/TweakInject/EmoZoom.dylib
+       0x10e9a0000 -        0x10e9a7fff EmojiSkinPrefs.dylib arm64e  <be672a28158c344f8381021c3b3b3589> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/TweakInject/EmojiSkinPrefs.dylib
+       0x10eb7c000 -        0x10eb8bfff libEmojiLibrary.dylib arm64e  <88059ded566638e59112300dec345a22> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/libEmojiLibrary.dylib
+       0x10eb44000 -        0x10eb57fff Fiona.dylib arm64e  <669e63315a1b33f7b66e10c9c070619b> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/TweakInject/Fiona.dylib
+       0x10ebb4000 -        0x10ebbffff KayokoHelper.dylib arm64e  <4d1a8d107bfc3fd0945de3b6fef950e6> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/TweakInject/KayokoHelper.dylib
+       0x10ebd4000 -        0x10ebdbfff libsandy.dylib arm64e  <08790daae0243eb597119d0e60ddfa4f> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/libsandy.dylib
+       0x10fd10000 -        0x10fd2ffff Misaki.dylib arm64e  <03533fcae9243a52abed11afb3ff9b6d> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/TweakInject/Misaki.dylib
+       0x10ed00000 -        0x10ed07fff Neatmenu.dylib arm64e  <7dc910dfc8cb325fa5ab0d0c097e8d07> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/TweakInject/Neatmenu.dylib
+       0x10fd84000 -        0x10fda7fff Shadow.dylib arm64e  <43af45e54af03b079c1b4e938779f5d3> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/TweakInject/Shadow.dylib
+       0x10f2a8000 -        0x10f2b3fff Shadow arm64e  <e8c930384d1d306396b5bc56fb41372b> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/Library/Frameworks/Shadow.framework/Shadow
+       0x10fd48000 -        0x10fd4ffff HookKit arm64e  <7437b99217f43750be82ad4c40a4f7bb> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/Library/Frameworks/HookKit.framework/HookKit
+       0x10fd64000 -        0x10fd6bfff RootBridge arm64e  <5dd2f07c3921329490c1ed60feab931b> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/Library/Frameworks/RootBridge.framework/RootBridge
+       0x10fdc0000 -        0x10fdc7fff Modulous arm64e  <0fd8bd21d5543cd8903b3db00e57df41> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/Library/Frameworks/Modulous.framework/Modulous
+       0x10fddc000 -        0x10fde3fff HookKitSubstrateModule arm64e  <d5b91dc2d93e333db788b76416bc26ce> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/Library/Modulous/HookKit/HookKitSubstrateModule.bundle/HookKitSubstrateModule
+       0x112d4c000 -        0x112d53fff HookKitFishhookModule arm64e  <c0629514de913152acb15d06e3fed7d3> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/Library/Modulous/HookKit/HookKitFishhookModule.bundle/HookKitFishhookModule
+       0x112d68000 -        0x112d6ffff Snowboard.dylib arm64e  <25f6ba679246342abb044c0a1219d06a> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/TweakInject/Snowboard.dylib
+       0x112e38000 -        0x112e97fff SnowBoardBase.dylib arm64e  <bfe6fe7e91d83e94a8fd5c61e3b26f8e> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/SnowBoardBase.dylib
+       0x112d84000 -        0x112d8ffff UnderDock.dylib arm64e  <e92199fa1d48485ab244b632804c9ad1> /private/preboot/DC462CBCCF4C97F0C1B88687CAC94529EBA0EA29249A304A91BFA7D56353B3E695CE308959620FE37EF85CE66B38E32B/jb/usr/lib/TweakInject/UnderDock.dylib
+       0x10e3f4000 -        0x10e3fffff libobjc-trampolines.dylib arm64e  <7e77fc541c3331c086e81fb7bf12836c> /private/preboot/Cryptexes/OS/usr/lib/libobjc-trampolines.dylib
+               0x0 - 0xffffffffffffffff ??? unknown-arch  <00000000000000000000000000000000> ???
+       0x2012b5000 -        0x2012c0ff3 libsystem_pthread.dylib arm64e  <aa302f5affe5327aa0033b288b935de1> /usr/lib/system/libsystem_pthread.dylib
+
+EOF
